@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<center>
+<head>
+<h1> Checker Board<h1>
+<style>
+table{
+	width: 500px;
+	height: 500px;
+}
+</style>
+</head>
+<body>
+<table border = "2px" green>
+<script type="text/javascript">
+  for (i=0; i<8; i++) {
+	document.writeln("<tr>");
+	for (j=0; j<8; j++){
+		if(i%2 == 0 && j%2 == 0 || i%2 == 1 && j%2 == 1)
+		document.writeln("<td style='background-color: red'></td>");
+		else
+		document.writeln("<td style='background-color: black'></td>");
+	}
+	document.writeln("</tr>");
+	}
+</script>
+</table>
+</body>
+</center>
+</html>
